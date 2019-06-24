@@ -42,7 +42,7 @@ $forumtask = $DB->get_record('task_scheduled', array('classname' => '\mod_forum\
 
 if ($forumtask->lastruntime < $hourago) {
 
-    $to = "s.ingenierie.logicielle@ml.u-cergy.fr>";
+    $to = "s.ingenierie.logicielle@ml.u-cergy.fr";
     $subject = "Erreur dans le cron";
     $message = utf8_decode("Cela fait plus de 15 minutes que les mails n'ont pas été envoyés."
             . " Le cron peut ne pas fonctionner.");
